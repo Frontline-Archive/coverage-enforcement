@@ -1,0 +1,16 @@
+{
+  "name": "sinet-istanbul-coverage-enforcement",
+  "version": "1.0.0",
+  "description": "Coverage enforcement thresholds for gulp-istanbul",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/School-Improvement-Network/istanbul-coverage-enforcement.git"
+  },
+  "author": "School Improvement Network",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/School-Improvement-Network/istanbul-coverage-enforcement/issues"
+  },
+  "homepage": "https://github.com/School-Improvement-Network/istanbul-coverage-enforcement#readme"
+}

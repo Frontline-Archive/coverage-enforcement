@@ -12,5 +12,9 @@
   "bugs": {
     "url": "https://github.com/School-Improvement-Network/istanbul-coverage-enforcement/issues"
   },
-  "homepage": "https://github.com/School-Improvement-Network/istanbul-coverage-enforcement#readme"
+  "homepage": "https://github.com/School-Improvement-Network/istanbul-coverage-enforcement#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2"
+  }
 }

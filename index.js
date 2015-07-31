@@ -3,10 +3,10 @@
 var colors = require( 'colors' );
 var Table  = require( 'cli-table' );
 
-var branches   = 50;
-var functions  = 50;
-var lines      = 80;
-var statements = 80;
+var branches   = 80;
+var functions  = 85;
+var lines      = 90;
+var statements = 90;
 
 var thresholds = {
 	'each' : {
@@ -22,6 +22,13 @@ var watermarks = {
 	'functions'  : [ functions, 85 ],
 	'lines'      : [ lines, 90 ],
 	'statements' : [ statements, 90 ],
+};
+
+var watermarks = {
+    'branches'   : [ branches, Math.round( Math.min( 100, branches * 1.1 ) * 100 ) / 100 ],
+    'functions'  : [ functions, Math.round( Math.min( 100, functions * 1.1 ) * 100 ) / 100 ],
+    'lines'      : [ lines, Math.round( Math.min( 100, lines * 1.1 ) * 100 ) / 100 ],
+    'statements' : [ statements, Math.round( Math.min( 100, statements * 1.1 ) * 100 ) / 100 ],
 };
 
 function log ( file ) {

@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 0.12.5
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+
+    # Detect errors and potential problems
+    - npm run eslint -- --reset --eslintrc ./
+    - npm run jscs -- ./

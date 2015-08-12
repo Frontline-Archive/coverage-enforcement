@@ -3,6 +3,10 @@
   "version": "1.1.0",
   "description": "Coverage enforcement thresholds",
   "main": "index.js",
+  "scripts": {
+    "eslint": "eslint",
+    "jscs": "jscs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/School-Improvement-Network/coverage-enforcement.git"
@@ -16,5 +20,10 @@
   "dependencies": {
     "cli-table": "^0.3.1",
     "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^0.23.0",
+    "jscs": "^1.12.0",
+    "sinet-coding-conventions": "^1.31.1"
   }
 }

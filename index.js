@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var log        = require( './lib/log' );
 var reporters  = require( './lib/reporters' );

@@ -24,6 +24,14 @@ var watermarks = {
     'statements' : [ statements, Math.round( Math.min( 100, statements * 1.1 ) * 100 ) / 100 ],
 };
 
+var reporters = [
+	'html',
+	'json-summary',
+	'json',
+	'text-summary',
+	'text'
+];
+
 function log ( file ) {
 	var table = new Table( {
 		'head' : [ 'Metric'.white.bold, 'Warning'.yellow.bold, 'Error'.red.bold ]
@@ -39,7 +47,8 @@ function log ( file ) {
 }
 
 module.exports = {
+	'log'        : log,
+	'reporters'  : reporters,
 	'thresholds' : thresholds,
-	'watermarks' : watermarks,
-	'log'        : log
+	'watermarks' : watermarks
 };

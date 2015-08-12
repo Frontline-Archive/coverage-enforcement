@@ -18,13 +18,6 @@ var thresholds = {
 };
 
 var watermarks = {
-	'branches'   : [ branches, 80 ],
-	'functions'  : [ functions, 85 ],
-	'lines'      : [ lines, 90 ],
-	'statements' : [ statements, 90 ],
-};
-
-var watermarks = {
     'branches'   : [ branches, Math.round( Math.min( 100, branches * 1.1 ) * 100 ) / 100 ],
     'functions'  : [ functions, Math.round( Math.min( 100, functions * 1.1 ) * 100 ) / 100 ],
     'lines'      : [ lines, Math.round( Math.min( 100, lines * 1.1 ) * 100 ) / 100 ],
